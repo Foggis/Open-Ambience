@@ -1,0 +1,36 @@
+dev.ambience.features.modules.client.ClickGuiModule|ClickGui|CLIENT|Opens the ClickGui
+dev.ambience.features.modules.combat.AutoMaceModule|AutoMace|COMBAT|Fall smash: aim, attribute-swap mace on the hit, restore. Optional axe stun first.
+dev.ambience.features.modules.combat.AutoEscModule|AutoEsc|COMBAT|Places water on cobweb you are stuck in, then scoops it back up.
+dev.ambience.features.modules.combat.AutoCrystalModule|AutoCrystal|COMBAT|Places and breaks crystals on crosshair obsidian/bedrock
+dev.ambience.features.modules.combat.CrystalOptimizerModule|CrystalOptimizer|COMBAT|Removes crystals client-side on hit so you don't wait for the server.
+dev.ambience.features.modules.combat.AutoWebModule|AutoWeb|COMBAT|Places cobwebs on nearby opponents.
+dev.ambience.features.modules.combat.TBotModule|TBot|COMBAT|Attacks the entity under your crosshair when in range.
+dev.ambience.features.modules.combat.ProjectileAimModule|ProjectileAim|COMBAT|Smoothly aims bows, crossbows, and pearls at people.
+dev.ambience.features.modules.combat.AimAssistModule|AimAssist|COMBAT|Smooth close-range aim for swords and UHC.
+dev.ambience.features.modules.combat.WTapModule|WTap|COMBAT|Stops walking after a sword hit so combos stay at range.
+dev.ambience.features.modules.combat.STapModule|STap|COMBAT|Walks back after a hit when the target approaches so they can't return the hit.
+dev.ambience.features.modules.combat.JumpResetModule|JumpReset|COMBAT|Jumps the tick you take knockback so you stay in combo range.
+dev.ambience.features.modules.combat.KeyPearlModule|KeyPearl|COMBAT|Throws an ender pearl from your hotbar when you press the bound key.
+dev.ambience.features.modules.combat.ShieldStunModule|ShieldStun|COMBAT|When you hit a blocking player, swaps to an axe to stun their shield then swaps back.
+dev.ambience.features.modules.combat.AnchorMacroModule|AnchorMacro|COMBAT|Charges and detonates placed anchors.
+dev.ambience.features.modules.player.FastXpModule|FastXP|PLAYER|Throws XP bottles quickly while holding right click.
+dev.ambience.features.modules.movement.AutoSprintModule|AutoSprint|MOVEMENT|Sprints after a short delay when you start moving.
+dev.ambience.features.modules.movement.WindHopModule|WindHop|MOVEMENT|Throws a wind charge under you. SilentAim keeps your camera still.
+dev.ambience.features.modules.movement.LungeSwapModule|LungeSwap|MOVEMENT|Jumps and stabs a Lunge spear in the same tick, then stays on the spear.
+dev.ambience.features.modules.movement.PearlCatchModule|PearlCatch|MOVEMENT|Hops with a wind charge, then looks up and throws pearl + wind.
+dev.ambience.features.modules.render.NoBlastModule|NoBlast|RENDER|Removes explosion blast particles.
+dev.ambience.features.modules.render.NoInvisModule|NoInvis|RENDER|Shows invisible entities.
+dev.ambience.features.modules.render.NoSmokeModule|NoSmoke|RENDER|Removes smoke particles.
+dev.ambience.features.modules.render.LowFireModule|LowFire|VISUALS|Better PvP style low fire overlay.
+dev.ambience.features.modules.render.FullbrightModule|Fullbright|VISUALS|Lights up your world.
+dev.ambience.features.modules.render.XRayModule|XRay|VISUALS|Hides most blocks so ores and chests show through the world.
+dev.ambience.features.modules.render.AntiBlindModule|AntiBlind|VISUALS|Removes darkness and blindness overlays.
+dev.ambience.features.modules.render.CustomSkyboxModule|CustomSkybox|VISUALS|Replaces the sky with custom color presets.
+dev.ambience.features.modules.render.WorldParticlesModule|WorldParticles|VISUALS|Ambient stars, rings, and falling particles around you.
+dev.ambience.features.modules.render.PlayerEspModule|PlayerESP|VISUALS|Boxes and tracers on other players.
+dev.ambience.features.modules.render.StorageEspModule|StorageESP|VISUALS|Boxes and tracers on chests and other containers.
+dev.ambience.features.modules.render.BlockEspModule|BlockESP|VISUALS|Boxes on block types you add, pick, or search.
+dev.ambience.features.modules.render.ViewModelModule|ViewModel|VISUALS|Scale and position first-person hands.
+dev.ambience.features.modules.render.FreelookModule|Freelook|VISUALS|Look around without turning your player.
+dev.ambience.features.modules.render.FreecamModule|Freecam|VISUALS|Detach the camera and fly around. Your player stays put.
+dev.ambience.features.modules.render.TotemAnimationModule|TotemAnimation|VISUALS|Makes the totem pop overlay smaller.

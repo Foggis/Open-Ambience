@@ -1,0 +1,18 @@
+accessWidener	v2	intermediary
+accessible	field	net/minecraft/class_332	field_59826	Lnet/minecraft/class_11246;
+accessible	field	net/minecraft/class_332	field_44659	Lnet/minecraft/class_332$class_8214;
+accessible	method	net/minecraft/class_332$class_8214	method_70863	()Lnet/minecraft/class_8030;
+accessible	field	net/minecraft/class_310	field_1752	I
+accessible	field	net/minecraft/class_2824	field_12870	I
+accessible	method	net/minecraft/class_2824$class_5906	method_34211	()Lnet/minecraft/class_2824$class_5907;
+accessible	class	net/minecraft/class_2824$class_5907
+accessible	field	net/minecraft/class_2824	field_12871	Lnet/minecraft/class_2824$class_5906;
+accessible	method	net/minecraft/class_310	method_1536	()Z
+accessible	method	net/minecraft/class_636	method_2911	()V
+accessible	field	net/minecraft/class_1309	field_6282	Z
+accessible	field	net/minecraft/class_744	field_55868	Lnet/minecraft/class_241;
+accessible	field	net/minecraft/class_1309	field_6228	I
+accessible	class	net/minecraft/class_12247$class_12338
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	name	Ljava/lang/String;
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	type	Lnet/minecraft/class_10789;
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	textureFormat	Lcom/mojang/blaze3d/textures/TextureFormat;

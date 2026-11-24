@@ -1,0 +1,76 @@
+plugins {
+    id "fabric-loom" version "${loom_version}"
+    id "java"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven { url = "https://maven.fabricmc.net/" }
+    maven {
+        name = "loomMinecraftCache"
+        url = gradle.gradleUserHomeDir.toPath().resolve("caches/fabric-loom/minecraftMaven").toUri()
+        content { includeGroup "net.minecraft" }
+    }
+}
+
+loom {
+    mods {
+        "ambience" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    compileOnly "net.minecraft:minecraft-merged-intermediary:1.21.11-net.fabricmc.yarn.1_21_11.1.21.11+build.6-v2"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+jar {
+    from("LICENSE_ambience") {
+        rename { "LICENSE_${project.base.archivesName.get()}" }
+    }
+}
+
+tasks.named("remapJar") {
+    enabled = false
+}
+
+tasks.register("publishJar", Copy) {
+    dependsOn("jar")
+    from(layout.buildDirectory.dir("devlibs"))
+    include("*-dev.jar")
+    into(layout.buildDirectory.dir("libs"))
+    rename("(.*)-dev\\.jar", "\$1.jar")
+}
+tasks.named("assemble") {
+    dependsOn("publishJar")
+}
