@@ -1,0 +1,1 @@
+The reason this was cracked, open sourced and is now being distributed is that its simply not worth €10. The owners of Ambience refuse to fix huge fucking security issues. They claim to have a "30 CTFtime pentester" testing it, yet the security is fucking horrible. I notified them about the issue, and it appears to have been there since the very beginning yet they wont fix it.
